@@ -22,51 +22,101 @@
 //     'MongoDB'
 
 //   Declare an empty array;
+      const array = [];
 
 //   Declare an array with more than 5 number of elements
+const countries= ["Nigeria", "Ghana", "Morocco", "Finland", "Kenya"];
 
 //   Find the length of your array
+console.log(countries.length);
 
 //   Get the first item, the middle item and the last item of the array
+let firstItem = countries[0]
+console.log(firstItem);
+let middArr =  countries[Math.round((countries.length - 1) / 2)];
+console.log(midItem);
+let lastArr = countries.length -1;
+console.log(countries[lastItem]);
+
 
 //   Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
+const mixedDataTypes =[1, 2, "Nigeria", "Togo", true, false, [1,2,"three",false]];
 
 //   Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
+const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle" ,"Amazon"];
 
 //   Print the array using console.log()
+console.log(itCompanies);
 
 //   Print the number of companies in the array
+console.log(itCompanies.length);
 
 //   Print the first company, middle and last company
+console.log(itCompanies[0]);
+let middleCompany =  itCompanies[Math.round((itCompanies.length - 1) / 2)];
+console.log(middleCompany) 
+let lastCompany = family.length -1;
+console.log(itCompanies[lastCompany]);
 
 //   Print out each company
+console.log(itCompanies[0]);
+console.log(itCompanies[1]);
+console.log(itCompanies[2]);
+console.log(itCompanies[3]);
+console.log(itCompanies[4]);
+console.log(itCompanies[5]);
+console.log(itCompanies[6]);
 
 //   Change each company name to uppercase one by one and print them out
+let index1 = itCompanies[0].toUpperCase();
+let index2 = itCompanies[1].toUpperCase();
+let index3 = itCompanies[2].toUpperCase();
+let index4 = itCompanies[3].toUpperCase();
+let index5 = itCompanies[4].toUpperCase();
+let index6 = itCompanies[5].toUpperCase();
+console.log(index1,index2,index3,index4,index5,index6);
+
 
 //   Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
+console.log(itCompanies.join(","));
 
 //   Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
+let indexx = itCompanies.indexOf('Google')
+ if(indexx === -1){
+    console.log("company not exist");
+ }else{
+  console.log("company does exist");
+ }
 
 //   Filter out companies which have more than one 'o' without the filter method
 
 //   Sort the array using sort() method
+console.log(itCompanies.sort());
 
 //   Reverse the array using reverse() method
+ console.log(itCompanies.reverse());
 
 //   Slice out the first 3 companies from the array
+console.log(itCompanies.slice(0, 3));
 
 //   Slice out the last 3 companies from the array
+ console.log(itCompanies.slice(4,7));
 
 //   Slice out the middle IT company or companies from the array
-
+let middCompany =  itCompanies[Math.round((itCompanies.length - 1) / 2)];
+ console.log(middCompany);
 
 //   Remove the first IT company from the array
+console.log(itCompanies.shift());
 
 //   Remove the middle IT company or companies from the array
+console.log(itCompanies.splice(middCompany));
 
 //   Remove the last IT company from the array
+console.log(itCompanies.pop());
 
 //   Remove all IT companies
+console.log(itCompanies.splice());
 
 //   Exercise: Level 2
 
